@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aashish Kishor - Portfolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav style="display: flex; justify-content: space-between; align-items: center; max-width: var(--content-max-width); margin: 0 auto; padding: 20px;">
+            <div class="brand-icon" style="font-weight: bold; font-size: 1.5rem;">&lt;AK/&gt;</div>
+            <ul style="display: flex; list-style: none; gap: 20px;">
+                <li><a href="#home" class="nav-link active" style="background-color: var(--primary-accent); padding: 5px 15px; border-radius: 15px; text-decoration: none; color: black;">Home</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" style="display: flex; max-width: var(--content-max-width); margin: 40px auto; gap: 40px;">
+        <div class="hero-content" style="flex: 1;">
+            <h1 class="hero-title" style="font-size: 2.5rem;">
+                I'm Aashish Kishor <br> 
+                <span class="highlight" style="color: var(--primary-accent);">Aspiring Web Developer</span>
+            </h1>
+            <p style="color: var(--text-muted); line-height: 1.6;">
+                Computer Science undergraduate at Galgotias University with hands-on practice in HTML, CSS, JavaScript, Java, and SQL. Currently looking for an internship opportunity to contribute to real-world projects.
+            </p>
+            <button class="cta-btn" style="background-color: var(--primary-accent); border: none; padding: 12px 24px; font-weight: bold; text-transform: uppercase; cursor: pointer; transition: transform 0.2s;">
+                HIRE ME
+            </button>
+        </div>
+        <div class="hero-graphic" style="flex: 1; position: relative;">
+            <img src="assets/images/desk-illustrationk.png" alt="Developer Desk" style="width: 100%;">
+        </div>
+    </section>
+
+    <section id="projects" class="projects" style="max-width: var(--content-max-width); margin: 60px auto; padding: 20px;">
+       <h2 class="section-title">My Projects</h2> 
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="card-content">
+                    <h3>Online EcommerceSmartbuy</h3>
+                    <p>Java Swing desktop application for admin login, product search, and inventory management. Implemented database operations using JDBC and SQL.</p>
+                    <div class="tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Swing</span>
+                        <span class="tag">JDBC</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">OOP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-content">
+                    <h3>SnakeGameJAVA</h3>
+                    <p>Classic Snake game separating game logic and graphical display. Features four difficulty levels, scoring, and real-time collision detection.</p>
+                    <div class="tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">LinkedList</span>
+                        <span class="tag">Event Handling</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section id="skills" class="skills" style="max-width: var(--content-max-width); margin: 60px auto; padding: 20px; text-align: center;">
+       <h2 class="section-title">Skills & Certifications</h2>
+        
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 40px;">
+            <span class="tag" style="font-size: 1rem; padding: 10px 20px; background-color: #e8eaef;">Java (OOP, Collections)</span>
+            <span class="tag" style="font-size: 1rem; padding: 10px 20px; background-color: #e8eaef;">HTML5, CSS3, JavaScript</span>
+            <span class="tag" style="font-size: 1rem; padding: 10px 20px; background-color: #e8eaef;">SQL & DBMS</span>
+            <span class="tag" style="font-size: 1rem; padding: 10px 20px; background-color: #e8eaef;">JDBC & Java Swing</span>
+            <span class="tag" style="font-size: 1rem; padding: 10px 20px; background-color: #e8eaef;">Git & GitHub</span>
+        </div>
+
+        <div style="background-color: var(--bg-card); padding: 30px; border-radius: var(--radius-md); box-shadow: var(--shadow-card); max-width: 700px; margin: 0 auto; text-align: left;">
+            <h3 style="margin-top: 0; color: var(--primary-accent); margin-bottom: 15px;">Key Certifications</h3>
+            <ul style="color: var(--text-muted); line-height: 1.8; margin: 0; padding-left: 20px; font-size: 1.05rem;">
+                <li>Database Programming with SQL - <strong>Oracle Academy</strong></li>
+                <li>Data Analysis with Python - <strong>Cognitive Class</strong></li>
+                <li>Deloitte Data Analytics Job Simulation - <strong>Forage</strong></li>
+                <li>Java for Beginners - <strong>GUVI</strong></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="leave-info" style="max-width: 700px; margin: 60px auto; padding: 20px;">
+       <h2 class="section-title">Get In Touch</h2> 
+        <form id="contactForm" style="display: flex; flex-direction: column; gap: 20px; background-color: var(--bg-card); padding: 40px; border-radius: var(--radius-md); box-shadow: var(--shadow-card);">
+            <input type="text" id="fullName" placeholder="Your Full Name ( Required)" required class="form-input">
+            <input type="email" id="email" placeholder="Your Email ( Required)" required class="form-input">
+            <input type="text" id="subject" placeholder="Subject" class="form-input">
+            <textarea id="message" placeholder="Your Message" rows="6" required class="form-input" style="resize: vertical;"></textarea>
+            
+            <button type="submit" class="cta-btn" style="background-color: var(--primary-accent); border: none; padding: 15px 30px; font-weight: bold; text-transform: uppercase; cursor: pointer; border-radius: var(--radius-sm); align-self: flex-start; transition: transform 0.2s;">SEND MESSAGE</button>
+        </form>
+    </section>
+
+    <section id="contact" class="connect" style="max-width: var(--content-max-width); margin: 60px auto; padding: 20px; text-align: center;">
+        <h2 class="section-title">Connect With Me</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 40px;">
+            
+            <a href="https://www.linkedin.com/in/aashish-kishor-059262313/?isSelfProfile=true" target="_blank" class="connect-card">
+                <h3 style="margin: 0 0 10px 0; color: var(--primary-accent); font-size: 1.2rem;">LinkedIn</h3>
+                <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem;">Professional Profile</p>
+            </a>
+            
+           
+            <a href="https://github.com/aashishkishor" target="_blank" class="connect-card">
+                <h3 style="margin: 0 0 10px 0; color: var(--primary-accent); font-size: 1.2rem;">GitHub</h3>
+                <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem;">Code Repositories</p>
+            </a>
+
+            
+            <a href="https://leetcode.com/u/aashishkishor99" target="_blank" class="connect-card">
+                <h3 style="margin: 0 0 10px 0; color: var(--primary-accent); font-size: 1.2rem;">LeetCode</h3>
+                <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem;">DSA Practice</p>
+            </a>
+
+            
+            <a href="https://codolio.com/profile/aashishkishor99" target="_blank" class="connect-card">
+                <h3 style="margin: 0 0 10px 0; color: var(--primary-accent); font-size: 1.2rem;">Codolio</h3>
+                <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem;">Coding Profile</p>
+            </a>
+        </div>
+        
+        <div style="background-color: var(--input-bg); padding: 20px; border-radius: var(--radius-sm); display: inline-block;">
+            <p style="margin: 0; font-size: 1.1rem; color: var(--text-primary);">
+                Email: <strong>aashishkishor4@gmail.com</strong> &nbsp;&nbsp;|&nbsp;&nbsp; Phone: <strong>9508687311</strong>
+            </p>
+        </div>
+    </section>
